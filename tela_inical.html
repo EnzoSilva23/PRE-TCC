@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia</title>
+    <title>BarberShop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class= "logo">Logo</div>
-        <h1>Barbearia</h1>
-        <div class="menu ">☰</div>
+        <h1>BarberShop</h1>
+        <div id="menu-container" class="menu-container">
+            <div class="menu">☰</div>
+            <nav id="dropdown-menu" class="dropdown-content"></nav>
+        </div>
     </header>
     <div class="conteiner_home">
         <div class="left-section">
-            <div class="placeholder">
-                <img src="image/animal.jfif" alt="">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="image/babearia1.jpg" alt="Imagem 1 da Barbearia">
+                    <img src="image/babearia2.jpg" alt="Imagem 2 da Barbearia">
+                    <img src="image/babearia3.jpg" alt="Imagem 3 da Barbearia">
+                </div>
+                <button id="prevBtn" class="carousel-btn prev-btn">❮</button>
+                <button id="nextBtn" class="carousel-btn next-btn">❯</button>
             </div>
-            <p>sobre nos<br>local<br>numero de telefone</p>
+            <ul class="lista">
+                <li>local: Rua 24 de maio N°141 Barrio: Nova Orleas São Paulo -SP</li>
+                <li>numero de telefone:(11)99999-9999 </li>
+            </ul>
         </div>
         
         <div class="rigth-section">
             <div class="calendar-placeholder">
-            <img src="image/animal.jfif" alt="">
+            <h2>Calendario de funcionamento</h2>
+            <div class="caledar">
+            <div class="calendar-header">
+            <span id="monthYear"></span>
             </div>
-            <p>dias que estaremos abertos <br> calendario</p>
+            <div class="days-container" id="calendarDays"></div>
+            </div>
+            </div>
+            <p class="Texto_home">De segunda a sexta das 09:00 as 18:00</p>
+             <button href="#" class="button-home">MARQUE SEU HORARIO AGORA</button>
         </div>
     </div>
-    <footer>
-        <button>MARQUE SEU HORARIO AGORA</button>
-    </footer>
-    <script src="script.js"></script>
+    <script src="tela_inicial.js"></script>
 </body>
 </html>
